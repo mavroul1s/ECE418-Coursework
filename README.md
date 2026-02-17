@@ -1,51 +1,53 @@
 # Neuro-Fuzzy Computing Coursework
 
-This repository contains solutions and implementations for the **Neuro-Fuzzy Computing** course (Fall 2025-2026), covering the intersection of neural networks, optimization theory, and fuzzy logic. 
+This repository contains solutions and implementations for the **Neuro-Fuzzy Computing** course (Fall 2025-2026). The project focuses on the mathematical foundations of neural networks, advanced optimization algorithms, and fuzzy logic systems.
 
-The project involves mathematical derivations, theoretical proofs, and implementation of algorithms from scratch using **MATLAB** and **Python**.
+It includes theoretical proofs derived in LaTeX and practical implementations in **MATLAB** and **Python**, featuring visualizations of optimization landscapes, decision boundaries, and network performance.
 
-## 📂 Project Structure
+## 📂 Project Structure & Key Implementations
 
 ### [Problem Set 1: Neural Network Fundamentals](./Problem_Set_1)
-Focuses on the mathematical foundations of learning algorithms and basic network architectures.
-* [cite_start]**Optimization:** Gradient Descent implementation and analytical calculus[cite: 5920].
-* [cite_start]**Activation Functions:** Derivations for Sigmoid, Tanh, Swish, and ReLU[cite: 5923].
-* [cite_start]**ADALINE & Widrow-Hoff:** Implementation of the LMS algorithm for pattern recognition (classifying 'T', 'G', 'F' pixel patterns)[cite: 6000].
-* [cite_start]**Backpropagation:** Full matrix-based implementation of Backpropagation for MLPs to approximate non-linear functions like $g(p) = 1 + \sin(p\pi/3)$[cite: 6040].
-* [cite_start]**Stability Analysis:** Maximum stable learning rates and eigenvalues of correlation matrices[cite: 4728].
+* **Optimization Landscapes (Ex 1):** Analysis and contour plotting of the function $f(x,y)=x^4+y^4-4xy+1$, identifying global minima and saddle points.
+* **Activation Function Analysis (Ex 4, 5):**
+    * Comparative study of **Log-Sigmoid vs. ReLU** networks.
+    * Implementation of **Swish** activation with **Leaky ReLU** output layers.
+* **ADALINE & LMS Algorithm (Ex 6, 8):**
+    * Multi-class classification using ADALINE.
+    * Visualization of the **MSE performance surface** and the **LMS weight trajectory** converging to the optimal solution $w^*$.
+* **Backpropagation (Ex 9):** Full matrix-based implementation of an MLP to approximate non-linear functions (e.g., $g(p) = 1 + \sin(p\pi/3)$), including hyperparameter tuning ($S^1$ size, learning rate).
 
-### [Problem Set 2: Optimization & Advanced Architectures](./Problem_Set_2)
-Explores second-order optimization, model compression, and specialized neural architectures.
-* [cite_start]**Advanced Optimizers:** * **Newton’s Method:** Convergence analysis and error rates[cite: 5788].
-    * [cite_start]**Conjugate Gradient:** Minimizing quadratic functions[cite: 5791].
-    * [cite_start]**Adadelta:** Implementation and visualization of trajectories on rotated surfaces[cite: 5808].
-    * [cite_start]**Momentum:** Stability analysis of Steepest Descent with momentum[cite: 5816].
-* [cite_start]**Model Compression:** Weight pruning strategies (Magnitude vs. Random) and "Super-weight" analysis[cite: 5797].
-* [cite_start]**CNNs:** Convolution vs. Matrix Multiplication (Toeplitz matrices), pooling commutativity, and parameter counting[cite: 5842].
-* [cite_start]**RBF Networks:** Designing Radial Basis Function networks for function approximation[cite: 5857].
-* [cite_start]**Unsupervised Learning:** Self-Organizing Maps (SOM) and Learning Vector Quantization (LVQ)[cite: 5868].
+### [Problem Set 2: Advanced Optimization & CNNs](./Problem_Set_2)
+* **Conjugate Gradient (Ex 3):** Implementation of the Conjugate Gradient method for quadratic minimization.
+* **Modern Optimizers (Ex 5):** Implementation of the **Adadelta** optimizer.
+    * Visualization of trajectories on standard vs. rotated loss surfaces.
+    * Analysis of convergence behavior with different learning rates.
+* **Efficient Convolution (Ex 9):**
+    * Implementation of 2D convolution using **Toeplitz Matrices** (converting convolution to matrix multiplication).
+    * Performance benchmarking: Direct Convolution vs. Matrix Multiplication.
 
-### [Problem Set 3: RNNs & Fuzzy Logic](./Problem_Set_3)
-Covers temporal sequence modeling and fuzzy set theory.
-* [cite_start]**Recurrent Neural Networks:** * Modeling Auto-Regressive (AR) processes[cite: 5661].
-    * [cite_start]Implementation of GRU/LSTM for time-series prediction[cite: 3940].
-* [cite_start]**LSTM Mechanics:** Analysis of vanishing gradients, gates ($f_t, i_t, o_t$), and cell state propagation[cite: 5669].
-* [cite_start]**Model Reduction (CNNs):** Kernel pruning based on $L_1$ norms and Cosine Similarity[cite: 5641].
-* [cite_start]**Fuzzy Logic:** * Operations on Fuzzy Subsets (Intersection, Union, Complement, Algebraic Sum)[cite: 5693].
-    * [cite_start]Fuzzy De Morgan Laws and Kleene-Dienes implication[cite: 5722].
-    * [cite_start]Linguistic Hedges ("Very", "More or Less") and fuzzy subset theory[cite: 5753].
+### [Problem Set 3: Recurrent Neural Networks](./Problem_Set_3)
+* **Time Series Prediction:**
+    * Generation of synthetic data using an **Auto-Regressive (AR)** model.
+    * Implementation of **RNNs (GRU/LSTM)** to predict temporal sequences.
+    * Analysis of training stability and Mean Squared Error (MSE) convergence.
 
 ## 🛠️ Technologies
-* **MATLAB**: Core implementation of optimization algorithms (Gradient Descent, Adadelta, LMS) and Neural Networks (MLP, RBF, ADALINE).
-* **Python**: Used for specific RNN/LSTM tasks and data generation.
-* **LaTeX**: Used for typesetting mathematical proofs and reports.
+* **MATLAB**: Used for Optimization (Adadelta, Conjugate Gradient), ADALINE, and MLP Backpropagation.
+* **Python**: Used for RNN/LSTM time-series modeling and Deep Learning tasks.
 
 ## 📊 Visualizations
-*(You should upload the best images from your reports to a 'figures' folder and link them here. For example:)*
 
-| Widrow-Hoff Learning Curve | Adadelta Trajectory |
-|:--------------------------:|:-------------------:|
-| <img src="./Problem_Set_1/figures/sse_plot.png" width="400"> | <img src="./Problem_Set_2/figures/adadelta_plot.png" width="400"> |
+Below are selected visualizations generated from the code in this repository:
+
+| LMS Optimization Trajectory | Adadelta on Rotated Surface |
+|:---------------------------:|:---------------------------:|
+| <img src="./Problem_Set_1/figures/lms_trajectory.png" width="400" alt="LMS Trajectory Ex 8"> | <img src="./Problem_Set_2/figures/adadelta_rotated.png" width="400" alt="Adadelta Ex 5"> |
+| *Visualizing the path of weights on the MSE Error Surface* | *Adadelta optimizer navigating a correlated loss landscape* |
+
+| MLP Function Approximation | Convolution vs Matrix Mult |
+|:--------------------------:|:--------------------------:|
+| <img src="./Problem_Set_1/figures/function_approx.png" width="400" alt="Backprop Ex 9"> | <img src="./Problem_Set_2/figures/conv_benchmark.png" width="400" alt="Convolution Ex 9"> |
+| *Approximating $1+\sin(p\pi/3)$ with variable hidden units* | *Benchmarking Toeplitz matrix multiplication speed* |
 
 ## 📜 License
 This project is for educational purposes. Please attribute if using the code.
