@@ -16,7 +16,7 @@ It includes theoretical proofs derived in LaTeX and practical implementations in
     * Visualization of the **MSE performance surface** and the **LMS weight trajectory** converging to the optimal solution $w^*$.
 * **Backpropagation (Ex 9):** Full matrix-based implementation of an MLP to approximate non-linear functions (e.g., g(p) = 1 + sin(pπ/3)), including hyperparameter tuning ($S^1$ size, learning rate).
 
-### [Problem Set 2: Advanced Optimization & CNNs](./problem_set2)
+### [Problem Set 2: Advanced Optimization & CNNs](./problem_set_2)
 * **Conjugate Gradient (Ex 3):** Implementation of the Conjugate Gradient method for quadratic minimization.
 * **Modern Optimizers (Ex 5):** Implementation of the **Adadelta** optimizer.
     * Visualization of trajectories on standard vs. rotated loss surfaces.
@@ -25,7 +25,7 @@ It includes theoretical proofs derived in LaTeX and practical implementations in
     * Implementation of 2D convolution using **Toeplitz Matrices** (converting convolution to matrix multiplication).
     * Performance benchmarking: Direct Convolution vs. Matrix Multiplication.
 
-### [Problem Set 3: Recurrent Neural Networks](./Problem_Set_3)
+### [Problem Set 3: Recurrent Neural Networks](./problem_set_3)
 * **Time Series Prediction:**
     * Generation of synthetic data using an **Auto-Regressive (AR)** model.
     * Implementation of **RNNs (GRU/LSTM)** to predict temporal sequences.
