@@ -6,7 +6,7 @@ It includes theoretical proofs derived in LaTeX and practical implementations in
 
 ## 📂 Project Structure & Key Implementations
 
-### [Problem Set 1: Neural Network Fundamentals](./Problem_Set_1)
+### [Problem Set 1: Neural Network Fundamentals](./problem_set_1)
 * **Optimization Landscapes (Ex 1):** Analysis and contour plotting of the function $f(x,y)=x^4+y^4-4xy+1$, identifying global minima and saddle points.
 * **Activation Function Analysis (Ex 4, 5):**
     * Comparative study of **Log-Sigmoid vs. ReLU** networks.
