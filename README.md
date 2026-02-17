@@ -35,19 +35,6 @@ It includes theoretical proofs derived in LaTeX and practical implementations in
 * **MATLAB**: Used for Optimization (Adadelta, Conjugate Gradient), ADALINE, and MLP Backpropagation.
 * **Python**: Used for RNN/LSTM time-series modeling and Deep Learning tasks.
 
-## 📊 Visualizations
-
-Below are selected visualizations generated from the code in this repository:
-
-| LMS Optimization Trajectory | Adadelta on Rotated Surface |
-|:---------------------------:|:---------------------------:|
-| <img src="./Problem_Set_1/figures/lms_trajectory.png" width="400" alt="LMS Trajectory Ex 8"> | <img src="./Problem_Set_2/figures/adadelta_rotated.png" width="400" alt="Adadelta Ex 5"> |
-| *Visualizing the path of weights on the MSE Error Surface* | *Adadelta optimizer navigating a correlated loss landscape* |
-
-| MLP Function Approximation | Convolution vs Matrix Mult |
-|:--------------------------:|:--------------------------:|
-| <img src="./Problem_Set_1/figures/function_approx.png" width="400" alt="Backprop Ex 9"> | <img src="./Problem_Set_2/figures/conv_benchmark.png" width="400" alt="Convolution Ex 9"> |
-| *Approximating $1+\sin(p\pi/3)$ with variable hidden units* | *Benchmarking Toeplitz matrix multiplication speed* |
 
 ## 📜 License
 This project is for educational purposes. Please attribute if using the code.
